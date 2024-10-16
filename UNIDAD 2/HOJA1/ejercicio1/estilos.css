@@ -1,0 +1,27 @@
+* {
+    text-align: center;
+}
+
+.formulario {
+    background-color: rgb(10, 59, 102);
+    width: 50%;
+}
+
+h1 {
+    color: white;
+}
+
+.cuenta {
+    background-color: white;
+    width: 80%;
+    color:black;
+}
+
+.cuenta h1 {
+    width: 100%;
+    border-bottom: 5px solid red;
+    background-color: rgb(121, 198, 221);
+    color: white;
+}
+
+
