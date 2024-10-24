@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio1Estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Blog de tecnologia</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Articulos</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articulos"> <!--class se puede utilizar en mas de una etiqueta, ID no-->
+            <article>
+                <h2>Guia de css</h2>
+                <p> Una guia rapida para aprender </p>
+                <p> En este articulo, te mostraremos como comenzar a diseñar sitios web usando CSS </p>
+                <a href="#" class="leer-mas">Leer mas</a> <!--la almohadilla no lleva a nada-->
+            </article>
+            <article>
+                <h2>Introduccion a JavaScript</h2>
+                <p>Conceptos bassicos sobre JavaScript</p>
+                <p>JavaScript es el lenguaje de programacion de la web. Aprende como funciona</p>
+                <ul>
+                    <li><a href="#">Variables</a></li>
+                    <li><a href="#">Funciones</a></li>
+                    <li><a href="#">Eventos</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Como usar HTML5</h2>
+                <p>Domina las nuevas etiquetas de HTML5</p>
+                <p>En este articulo aprenderás sobre las nuevas capacidades que ofrece HTML5</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </article>
+        </section>
+
+        <aside class="barra-lateral">
+            <h3>Ultimos comentarios</h3>
+            <ul>
+                <li><strong>Juan:</strong> Excelente articulo de JavaScript</li>
+                <li><strong>Ana:</strong> Muy util la guia de CSS</li>
+                <li><strong>Carlos:</strong> HTML5 esta revolucionando el desarrollo web</li>
+            </ul>
+            <section class="formulario-contacto">
+                <h3>Formulario de contacto</h3>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo electronico:</label>
+                    <input type="text" id="email" name="email" placeholder="tuemail@dominio.com">
+                    <br>
+                    <label for="mensajae">Mensaje:</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="72"
+                        placeholder="Escribe tu mensaje"></textarea>
+
+                    <fieldset>
+                        <legend>Preferencias de contacto</legend>
+                        
+                        <input type="radio" name="preferencias" id="correo" value="correo">Correo electronico
+                        <input type="radio" name="preferencias" id="telefono" value="telefono">Teléfono
+                    </fieldset>
+
+                    <label for="newsletter">Suscribirse a la newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+
+                    <input type="submit" name="enviar">
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog Tecnología</p>
+        <p><a href="mailto:info@blogdetecnologia.com">Contacto</a></p>
+        <!--mailto abre directamente la app del correo con el correo puesto-->
+    </footer>
+</body>
+
+
+
+</html>

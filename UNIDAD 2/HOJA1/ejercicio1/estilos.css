@@ -5,19 +5,21 @@
 .formulario {
     background-color: rgb(10, 59, 102);
     width: 50%;
+    height: 60%;
 }
 
 h1 {
     color: white;
 }
 
-.cuenta {
+form {
     background-color: white;
     width: 80%;
     color:black;
+    border: solid red;
 }
 
-.cuenta h1 {
+form h1 {
     width: 100%;
     border-bottom: 5px solid red;
     background-color: rgb(121, 198, 221);

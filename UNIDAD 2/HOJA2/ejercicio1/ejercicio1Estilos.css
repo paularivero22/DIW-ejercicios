@@ -1,0 +1,66 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+header h1 {
+    color:rgb(33, 167, 167);    
+}
+
+.leer-mas {
+    background-color: rgb(33, 167, 167);
+    color: white;
+    text-decoration: none;
+}
+
+.leer-mas:hover {
+    background-color: rgb(83, 207, 207);
+}
+
+nav ul li a {
+    color:rgb(33, 167, 167);
+    text-decoration: none;
+}
+
+.articulos ul li a {
+    color: rgb(83, 207, 207);
+    text-decoration: none;
+}
+
+.barra-lateral > ul > li {
+    font-style: italic;
+}
+
+nav > ul > li:hover {
+    background-color: aliceblue;
+}
+
+form > fieldset {
+    border: 2px dotted black;
+}
+
+.articulos article + article {
+    background-color: aliceblue;
+}
+
+form input + label {
+    font-weight: bold;   
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+footer a:hover {
+    color: rgb(33, 167, 167);
+}
+
+footer a[href^="mailto:"] {
+    font-size: 1.2em;
+}
+
+aside ul li strong {
+    font-weight: bold;
+    color: rgb(11, 83, 83);
+}
