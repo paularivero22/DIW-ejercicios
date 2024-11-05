@@ -1,0 +1,42 @@
+* {
+    background-color: #146356;
+}
+
+h1 {
+    color: #146356;
+}
+
+header {
+    background-color: #F3C892;
+    border: 2px solid white;
+}
+
+header h1, header p {
+    background-color: #F3C892;
+}
+
+main section {
+    display: inline-block;
+}
+
+#S1 {
+    background-color: #146356;
+    width: 20%;
+}
+
+#S1 p{
+    color: white;
+    text-align: center;
+    background-color: #146356;
+}
+
+#S2 {
+    width: 40%;
+    border: 2px solid white;
+    background-color: #F3C892;
+}
+
+#S2 p{
+    background-color: #F3C892;
+}
+
