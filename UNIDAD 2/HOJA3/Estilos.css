@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #146356;
 }
 
@@ -11,8 +11,13 @@ header {
     border: 2px solid white;
 }
 
-header h1, header p {
+header h1,
+header p {
     background-color: #F3C892;
+}
+
+main {
+    margin-top: 25px;
 }
 
 main section {
@@ -22,21 +27,53 @@ main section {
 #S1 {
     background-color: #146356;
     width: 20%;
+    border: 2px solid white;
 }
 
-#S1 p{
+#S1 p {
     color: white;
     text-align: center;
     background-color: #146356;
 }
 
 #S2 {
-    width: 40%;
+    padding: 15px;
+    width: 50%;
+    background-color: #F3C892;
+}
+
+#enlaces table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#enlaces tr td {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #A3DA5D;
+    border: 1px solid black;
+}
+
+#introduccion img {
+    float: left;
+    height: 100%;
+    width: 100px;
+    margin: 15px 15px 0px 0px;
+}
+
+#paraQueSirve img {
+    width: 300px;
+    float: right
+}
+
+#S3 {
+    width: 25%;
+    border: 2px solid rgb(134, 65, 65);
+}
+
+#S3 img {
+    width: 250px;
     border: 2px solid white;
-    background-color: #F3C892;
 }
-
-#S2 p{
-    background-color: #F3C892;
-}
-
