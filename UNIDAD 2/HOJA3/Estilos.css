@@ -1,5 +1,9 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: #146356;
+
+    margin: 25px;
+    padding: 0px;
 }
 
 h1 {
@@ -7,38 +11,66 @@ h1 {
 }
 
 header {
+    height: 200px;
+    text-align: center;
+
     background-color: #F3C892;
     border: 2px solid white;
 }
 
-header h1,
-header p {
-    background-color: #F3C892;
+header img {
+    width: 200px; 
+    height: 200px;
+    float: left;
 }
+
+header h1 {
+    color:#146356;
+    font-size: 40px;
+}
+
+header p {
+    color:#146356;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
 
 main {
-    margin-top: 25px;
-}
+    display: flex;
+    justify-content: space-betweeng;
 
-main section {
-    display: inline-block;
+    font-size: 16px;
+
+    margin-top: 25px;
+    padding: 20px;
 }
 
 #S1 {
-    background-color: #146356;
     width: 20%;
-    border: 2px solid white;
+    float: left;
+    padding: 15px;
+
+    background-color: #146356;
 }
 
 #S1 p {
-    color: white;
     text-align: center;
-    background-color: #146356;
+    font-style: italic;
+
+    color: white;
 }
 
 #S2 {
-    padding: 15px;
     width: 50%;
+    float: left;
+
+    padding: 15px;
+    
     background-color: #F3C892;
 }
 
@@ -65,15 +97,22 @@ main section {
 
 #paraQueSirve img {
     width: 300px;
-    float: right
+    float: right;
+    margin-left: 15px;
 }
 
 #S3 {
     width: 25%;
-    border: 2px solid rgb(134, 65, 65);
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px; 
 }
 
 #S3 img {
-    width: 250px;
-    border: 2px solid white;
+    max-width: 350px;
+    max-height: 350px;
 }
