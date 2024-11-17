@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function validarFormulario() {
+            let nombre = document.getElementById('nombre').value;
+            let apellidos = document.getElementById('apellidos').value;
+            let dni = document.getElementById('dni').value;
+            let nacimiento = document.getElementById('nacimiento').value;
+            let direccion = document.getElementById('direccion').value;
+            let telefono = document.getElementById('telefono').value;
+            let correo = document.getElementById('correo').value;
+            let acepta = document.getElementById('acepta').checked;
+
+            // Validaciones
+            let regexDni = /^\d{8}[A-Za-z]$/;
+            let regexTelefono = /^\d{3} \d{6}$/;
+            let valido = true;
+
+            if (!regexDni.test(dni)) {
+                alert('El DNI no es válido.');
+                valido = false;
+            }
+            if (!regexTelefono.test(telefono)) {
+                alert('El teléfono no tiene el formato correcto.');
+                valido = false;
+            }
+            if (!acepta) {
+                alert('Debe aceptar las condiciones.');
+                valido = false;
+            }
+
+            return valido;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Datos Personales</h1>
+        <form action="/crear_usuario.php" method="POST" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="20" autofocus>
+            <br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required maxlength="40">
+            <br><br>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required maxlength="9">
+            <br><br>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required min="2000-01-01" max="2023-09-10">
+            <br><br>
+            <label>Sexo:</label>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="otros">Otros</label>
+            <input type="radio" id="otros" name="sexo" value="otros" checked>
+            <br><br>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required maxlength="120">
+                <br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required placeholder="123 456789">
+                <br><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+            </fieldset>
+            <br><br>
+            <label for="acepta">Acepto las condiciones:</label>
+            <input type="checkbox" id="acepta" name="acepta" required>
+            <br><br>
+            <div class="botones">
+                <input type="submit" value="Guardar">
+                <a href="index.html"><button type="button">Volver</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

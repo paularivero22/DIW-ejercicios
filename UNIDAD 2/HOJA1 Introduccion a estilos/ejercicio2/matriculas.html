@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function agregarMatricula() {
+            let ciclo = document.getElementById('ciclo').value;
+            let modulo = document.getElementById('modulo').value;
+            let numMatricula = document.getElementById('numMatricula').value;
+
+            let listaMatriculas = document.getElementById('listaMatriculas');
+            let newRow = document.createElement('tr');
+
+            newRow.innerHTML = `<td>${ciclo}</td><td>${modulo}</td><td>${numMatricula}</td><td><button onclick="eliminarMatricula(this)">Eliminar</button></td>`;
+            listaMatriculas.appendChild(newRow);
+        }
+
+        function eliminarMatricula(button) {
+            button.parentElement.parentElement.remove();
+        }
+
+        function reiniciarFormulario() {
+            document.getElementById('matriculaForm').reset();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Matriculas</h1>
+        <form id="matriculaForm">
+            <input type="hidden" id="dni" name="dni">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" readonly>
+            <br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" readonly>
+            <br><br>
+            <label for="ciclo">Ciclo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="DAM">DAM</option>
+                <option value="DAW">DAW</option>
+                <option value="ASIR">ASIR</option>
+                <option value="SMR">SMR</option>
+            </select>
+            <br><br>
+            <label for="modulo">Módulo:</label>
+            <select id="modulo" name="modulo" required>
+                <option value="Programación">Programación</option>
+                <option value="Bases de datos">Bases de datos</option>
+                <option value="Sistemas informáticos">Sistemas informáticos</option>
+                <option value="Lenguaje de marcas">Lenguaje de marcas</option>
+            </select>
+            <br><br>
+            <label for="numMatricula">Número de matrícula:</label>
+            <select id="numMatricula" name="numMatricula" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="agregarMatricula()">Agregar Matrícula</button>
+        </form>
+        <h3>Lista de Matrículas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ciclo</th>
+                    <th>Módulo</th>
+                    <th>Matricula</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="listaMatriculas">
+            </tbody>
+        </table>
+        <br><br>
+        <button onclick="reiniciarFormulario()">Reiniciar Formulario</button>
+    </div>
+</body>
+
+</html>

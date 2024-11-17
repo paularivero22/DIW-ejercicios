@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credenciales de Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        <form action="/autenticar.php" method="POST">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <br><br>
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" id="contrasenia" name="contrasenia" required>
+            <br><br>
+            <div class="botones">
+                <input type="submit" value="Entrar">
+                <a href="index.html"><button type="button">Cancelar</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex; 
+}
+
+.sidebar {
+    width: 12.5%; /* El sidebar ocupa 1/9 del ancho total (1:8 de la relación con el contenido) */
+    background-color:rgb(37, 150, 190);
+    color: white;
+    padding: 15px;
+    height: 100%; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar li a {
+    border-bottom: 1px solid #ccc;
+}
+
+.contenido {
+    flex-grow: 1; /* El contenido ocupa el espacio restante */
+    background-color:rgb(168, 186, 193);
+    padding: 20px;
+    height: 100%;
+}

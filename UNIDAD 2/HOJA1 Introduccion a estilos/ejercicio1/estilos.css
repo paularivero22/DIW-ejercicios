@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    background-color: #f0f0f0; 
+}
+
 * {
     text-align: center;
 }
@@ -5,7 +13,8 @@
 .formulario {
     background-color: rgb(10, 59, 102);
     width: 50%;
-    height: 60%;
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 h1 {
@@ -15,8 +24,8 @@ h1 {
 form {
     background-color: white;
     width: 80%;
-    color:black;
-    border: solid red;
+    color: black;
+    padding: 10px; 
 }
 
 form h1 {
@@ -24,6 +33,5 @@ form h1 {
     border-bottom: 5px solid red;
     background-color: rgb(121, 198, 221);
     color: white;
+    padding: 10px 0;
 }
-
-

@@ -1,0 +1,8 @@
+div {
+    /* Margen superior 30px, laterales 50px, inferior 10px */
+    margin: 30px 50px 10px 50px; 
+    /* Relleno de 30px en todos los lados */
+    padding: 30px; 
+    /* Borde visible de 2px de grosor y color negro */
+    border: 2px solid black; 
+}
