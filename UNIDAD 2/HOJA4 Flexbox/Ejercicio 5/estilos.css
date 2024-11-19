@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -13,7 +7,7 @@ main {
 }
 
 .sidebar {
-    width: 12.5%; /* El sidebar ocupa 1/9 del ancho total (1:8 de la relación con el contenido) */
+    flex: 1; /* El sidebar ocupa 1/9 del ancho total (1:8 de la relación con el contenido) */
     background-color:rgb(37, 150, 190);
     color: white;
     padding: 15px;
@@ -41,8 +35,7 @@ main {
 }
 
 .contenido {
-    flex-grow: 1; /* El contenido ocupa el espacio restante */
+    flex: 8;
     background-color:rgb(168, 186, 193);
     padding: 20px;
-    height: 100%;
 }

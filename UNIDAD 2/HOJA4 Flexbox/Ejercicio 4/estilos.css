@@ -15,7 +15,7 @@ body {
 .contenedor {
     display: flex; 
     height: 100vh; 
-    gap: 2px; /* Espacio de 2px entre el sidebar y el contenido */
+    gap: 2px; 
 }
 
 .sidebar {
