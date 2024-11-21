@@ -1,12 +1,18 @@
-containter {
+.container {
     display: grid;
-    grid-template-columns: 200px 1fr 2fr;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: repeat(3, fit-content(100px));
+    grid-template-rows: repeat(3, fit-content(100px));
     width: 400px;
     border: 1px solid black;
+    gap: 10px;
 }
 
-.containter>div {
+/*.container div:first-child {
+    background-color: greenyellow;
+    align-self: start;
+}*/
+
+.container>div {
     border: 1px solid saddlebrown;
     background-color: chocolate;
 }
