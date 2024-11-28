@@ -23,7 +23,7 @@ header {
     color: white;
     border: solid 1px white;
     margin: 25px;
-    padding: 10px 20px;
+    padding: 10px 20px; /*10 px por arriba y por abajo, 20px por izq y der*/
     border-radius: 20px;
     width: 300px;
     font-size: 12px;
@@ -58,6 +58,9 @@ nav ul li a {
 .imagenes {
     display: flex;
     flex-wrap: wrap;
+    /*
+    se mueven a la siguiente linea si no caben en la línea actual
+    */
     justify-content: center;
     margin: 20px;
 }
@@ -77,24 +80,35 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /*
+    los divs se distribuyen con un espacio uniforme 
+    */
     background: #004b8d;
     color: white;
     padding: 20px;
-}
-
-.contacto form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
 }
 
 .contacto h2, .contacto label {
     color: orange;
 }
 
+.contacto form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
 .contacto label {
-    flex: 1 1 150px;
+    flex: 1 1 150px; 
+    /*
+        flex-grow: 1; 
+        -> cuanto debe crecer un elemento en relacion con los demas
+        flex-shrink: 1;
+        -> cuanto debe encogerse un elemento si el contenedor no tiene suficiente espacio 
+        flex-basis:150px;
+        -> el tamaño inicial del elemento de base
+    */
     margin-right: 10px;
     text-align: left;
 }
@@ -118,6 +132,9 @@ nav ul li a {
 
 form input, form button {
     display: block;
+    /*
+    para que se coloquen en una nueva linea y ocupen todo el espacio disponible
+    */
     width: 100%; 
     margin: 10px 0;
     padding: 10px;
@@ -130,7 +147,6 @@ form button {
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
     margin-top: 20px;
     width: 20%;
 }
@@ -157,14 +173,26 @@ footer {
     padding: 10px 0;
 }
 
-@media (max-width: 767px) {
+/* bloque media query */
+@media (max-width: 767px) { 
+    /*
+    se aplica cuando el ancho es igual o menor a 767 píxeles
+    */
+
     .imagenes {
         flex-direction: column;
+        /* 
+        las imagenes se distribuyen como columnas en vez de en una fila
+        */
         align-items: center;
+        margin-top: 100px;
+        /*
+        para que se separe del menu en columna
+        */
     }
 
     .imagen {
-        flex: 1 1 100%; /*cada imagen ocupa todo el ancho disponible*/
+        flex: 1 1 100%; /*cada imagen ocupa todo el ancho disponible en vez de un 23%*/
     }
 
     .contacto {
@@ -182,14 +210,11 @@ footer {
 
     .contacto form {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .contacto label, .contacto input {
         flex: 1 1 100%;
     }
-
-    form button {
-        width: 100%;
-    }
+    
 }
