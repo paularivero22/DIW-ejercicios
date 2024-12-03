@@ -6,38 +6,54 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    --green-50: #e7ffe4;
+    --green-100: #c9ffc4;
+    --green-200: #98ff90;
+    --green-300: #56ff50;
+    --green-400: #00ff00;
+    --green-500: #00e606;
+    --green-600: #00b809;
 }
 
 header {
-    background-color: #00b809;
-    width: 100%;
+    background-color: var(--green-600);
+    height: 50px;
 }
 
-contenidoHeader {
+.contenidoHeader {
+    margin: 0 15%;
     background-color: #00e606;
     display: flex;
-    height: 55px;
-    width: 70%;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+    align-items: end;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
 }
 
-titulo {
+/*
+#logoNav {
+    margin-left: 5px;
     display: flex;
-    justify-content: left;
-    align-items: end;
+    align-items: center;
 }
 
-.menu {
-    display: flex;
-    justify-content: right;
-    align-items: end;
+#logoNav img {
+    width: 2.5em;
+    margin-right: 0.5em;
 }
+*/
 
 .menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    display: inline-block;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 6px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .menu a {
@@ -46,29 +62,116 @@ titulo {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.menu ul li:hover {
+    outline-style: solid;
+    outline-width: 1px;
+    background-color: #00ff00;
+    border-radius: 5px;
+    color: #00b809;
 }
 
-main article {
+main {
+    margin: 10px 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+#contenidoPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    background-color: var(--green-50);
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin-top: 10px;
+}
+
+aside h3 {
+    text-decoration: underline;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    text-decoration: underline overline;
+}
+
+#contenidoPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#contenidoPrincipal article {
+    flex: 0 0 200px;
     background-color: rgb(230, 230, 230);
-    text-align: left;
-    width: 300px;
-    padding: 20px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+#contenidoPrincipal article h2 {
+    margin-top: 0;
+}
+
+#contenidoPrincipal article p {
+    text-align: justify;
 }
 
 footer {
+    margin: 0 15%;
+    background-color: #00b809;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #00b809;;
+    align-items: start;
 }
 
-footer div {
+footer section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: 45%;    
     background-color: #00e606;
-    padding: 15px;
-    border-radius: 10px;
-    width: 30%;
+}
+
+/* sub menu */
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /*para que el menu aparezca justo debajo del li*/
+    list-style: none;
+    border-radius: 5px;
+    margin: 0;
+    width: 150px;
+    z-index: 10;
+    background-color: #00e606;
+}
+
+nav ul li:hover .submenu {
+    display: block;
 }
