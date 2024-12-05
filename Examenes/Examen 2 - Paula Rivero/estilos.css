@@ -1,0 +1,251 @@
+/*reseteo de css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /*unidad relativa*/
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* los elementos (articulños) se colocaran horizontalmente con espacio uniforme entre ellos */
+    align-items: center;
+    /* los elementos se alinean verticalmente al centro */
+    padding: 10px;
+    height: 150px;
+}
+
+.logo img {
+    max-width: 150px; /* max-width en vez de width para que no se deforme la imagen*/
+}
+
+.seccionDerecha {
+    font-size: 0.9em;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    /*la direccion vertical en la que se posicionaran los elementos flexibles será en columnas*/
+    justify-content: space-around;
+    /*space around coloca un espacio uniforme entre los elementos*/
+    align-items: end;
+
+    gap: 9px; /*el espacio entre los elementos*/
+}
+
+.seccionDerecha img {
+    max-width: 17px;
+}
+
+.seccionDerecha input {
+    height: 30px;
+    padding: 5px;
+}
+
+nav {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    list-style-type: none; /* quita los puntos de la lista*/
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;/*negrita*/
+}
+
+#submenu {
+    display: none;
+}
+
+#submenu:hover {
+    position: absolute;
+    background-color: black;
+    width: 250px;
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    /* crea 2 columnas del 50% de acnho del contenedor padre cada una*/
+    grid-template-rows: 100% 100%;
+    /*crea 2 filas del 100% de alto del contenedor*/
+    margin-bottom: 10px;
+}
+
+.foto1 {
+    grid-row: 1; /*ocupara la primera fila*/
+    grid-column: 1; /*ocupara la primera columna*/
+    background-image: url(./img/friday.jpg);
+}
+
+.foto2 {
+    grid-row: 1; /*ocupara la primera fila*/
+    grid-column: 2; /*ocupara la segunda columna*/
+    background-image: url(./img/promo1.jpg);
+}
+
+.foto1,
+.foto2 {
+    background-repeat: no-repeat;
+    /*se asegura de que la imagen de fondo no se repita si no ubre todo el contenedor*/
+    background-size: cover;
+    /*hace que la imagen cubra todo el contenedor*/
+    padding: 15px;
+}
+
+
+
+#enlaces {
+    text-align: left;
+    width: 50%;
+}
+
+#enlaces2 {
+    text-align: right;
+}
+
+#enlaces ul,
+#enlaces2 ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+    flex-direction: column;
+    list-style: none;
+}
+
+#enlaces2 ul {
+    justify-content: end;
+}
+
+#enlaces a,
+#enlaces h3,
+#enlaces p,
+#enlaces2 a,
+#enlaces2 h3,
+#enlaces2 p {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.822);
+    color: black;
+    padding: 5px;
+}
+
+#enlaces a:hover,
+#enlaces2 a:hover {
+    background-color: rgb(194, 42, 0);
+    color: white;
+    font-weight: bold;
+}
+
+aside {
+    width: 20%;
+    height: 200px;
+    border: 1px solid #ccc ;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+aside p {
+    font-weight: bold;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*si los elementos no caben se pasan a una siguiente linea*/
+    justify-content: space-between;
+    gap: 15px;
+    padding: 5px;
+}
+
+.productosPrincipal {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#producto {
+    border: 1px solid #ddd;
+    padding: 7px;
+    text-align: center;
+}
+
+#producto p {
+    margin: 5px;
+}
+
+#producto:hover { /*estilos para cuando se pasa el raton por encima*/
+    background-color:rgb(194, 42, 0);
+    color: white;
+    font-weight: bold;
+}
+
+#producto img {
+    max-width: 300px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /*crea 3 columnas donde la primera ocupa del doble que las demas*/
+    grid-template-rows: 1fr;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sobreNosotros img {
+    max-width: 50px;
+    float: left;
+    /* flota hacia la izquierda y el contenido al rededor se coloca a su derecha */
+    margin: 10px;
+}
