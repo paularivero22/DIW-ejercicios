@@ -79,6 +79,7 @@ main {
 #contenidoPrincipal {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 aside {
@@ -109,12 +110,6 @@ aside a {
 
 aside a:hover {
     text-decoration: underline overline;
-}
-
-#contenidoPrincipal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 #contenidoPrincipal article {
