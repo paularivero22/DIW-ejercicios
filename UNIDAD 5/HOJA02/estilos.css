@@ -1,0 +1,94 @@
+body {
+    font-size: 0.9em;    
+}
+
+header {
+    height: 200px;
+    background-image: url(./img/imagen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{ 
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    flex-direction: row;
+}
+
+nav a {
+   color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px;
+}
+
+.primerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.primerSection div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.primerSection article {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.segundoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+a:focus, button:focus, input:focus {
+    outline: 2px solid white;
+}
