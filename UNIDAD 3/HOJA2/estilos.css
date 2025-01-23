@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(39, 36, 36);
+    color: #333;
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+main h1 {
+    color: teal;
+    text-align: left; 
+    font-size: 2.5em;
+    margin-left: 10px; 
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: gainsboro;
+    padding: 30px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.portada {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.portada img {
+    max-width: 100%;
+    border-radius: 8px; 
+}
+
+.texto {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.texto h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.texto h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.texto a {
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.audio {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    main h1 {
+        font-size: 2em;
+        margin-left: 10px; 
+    }
+
+    main section {
+        grid-template-columns: 1fr;  /*elementos en una sola columna */
+        height: auto;
+    }
+
+    .portada img {
+        max-width: 90%;  
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .texto {
+        gap: 10px;
+        text-align: left; 
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+.animado {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 10px;
+
+    animation: mover 5s linear infinite;
+}
+
+@keyframes mover {
+    0%{transform: translateX(0);}
+    50%{transform: translateX(500px);}
+    100%{transform: translateX(0);}
+}

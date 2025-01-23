@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque de la Naturaleza</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="typing">
+            <h1>Parque de la Naturaleza</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-el-parque">Sobre el Parque</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cabecera" class="cabecera">
+            <div class="texto">
+                <h1>Bienvenidos al Parque de la Naturaleza</h1>
+            </div>
+        </section>
+
+        <section id="sobre-el-parque">
+            <h2>Sobre el Parque</h2>
+            <p>
+                Nuestro Parque de la Naturaleza es un espacio donde los animales viven en semilibertad, rodeados de un
+                entorno natural incomparable. El parque cuenta con una amplia variedad de especies, desde mamíferos
+                hasta aves exóticas. Ubicado en un área de gran riqueza natural, ofrecemos rutas guiadas y actividades
+                educativas para toda la familia.
+            </p>
+
+            <div id="lista">
+                <div>
+                    <p>
+                        <span>Ubicación: </span>
+                        Cantabria, España
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>Actividades: </span>
+                        Visitas guiadas, Actividades educativas, Demostraciones de aves <br> <a href="#actividades">leer
+                            mas</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="videos">
+                <video src="./img/ciervo.mp4" autoplay muted loop></video>
+                <video src="./img/buho.mp4" autoplay muted loop></video>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="imagenes">
+                <div class="anim-imagen crecer">
+                    <img src="./img/lince.jpg" alt="Lince iberico">
+                </div>
+                <div class="anim-imagen aparecer">
+                    <img src="./img/zorro.webp" alt="Zorro comun">
+                </div>
+                <div class="anim-imagen rotar">
+                    <img src="./img/carabo.jpg" alt="Carabo comun">
+                </div>
+                <div class="anim-imagen borde">
+                    <img src="./img/lobo.jpg" alt="Lobo">
+                </div>
+            </div>
+        </section>
+
+        <section class="nubes">
+            <div class="nube">
+                <img src="./img/nube.png" alt="Nube">
+            </div>
+            <div class="nube">
+                <img src="./img/nube.png" alt="Nube">
+            </div>
+        </section>
+
+        <section id="actividades">
+            <h2>Actividades</h2>
+            <div class="actividades">
+                <div class="actividad">
+                    <p>Visitas Guiadas</p>
+                    <img src="./img/visitas.jpeg" alt="Visitas guiadas">
+                </div>
+                <div class="actividad">
+                    <p>Actividades Educativas</p>
+                    <img src="./img/educativas.jpeg" alt="Actividades educativas">
+                </div>
+                <div class="actividad">
+                    <p>Demostraciones de aves</p>
+                    <img src="./img/demostraciones.webp" alt="Demostraciones de aves">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Parque de la Naturaleza. Todos los derechos reservados.</p>
+        <p><a href="#">Volver arriba</a></p>
+    </footer>
+</body>
+
+</html>

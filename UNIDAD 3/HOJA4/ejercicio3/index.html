@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Agencia Creativa</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Agencia Creativa</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#portada">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portada" class="portada">
+            <div class="portada-contenido">
+                <h1 class="titulo">Somos tu mejor aliado creativo</h1>
+                <p class="subtitulo">Innovación y diseño a tu alcance</p>
+                <a href="#servicios" class="btn">Descubre nuestros servicios</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicio-cards">
+                <div class="servicio-card">
+                    <img src="./img/icono1.png" alt="Diseño Web">
+                    <h3>Diseño Web</h3>
+                    <p>Diseñamos sitios web modernos y funcionales.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="./img/icono2.png" alt="Branding">
+                    <h3>Branding</h3>
+                    <p>Construimos marcas sólidas y reconocibles.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="./img/icono3.png" alt="Marketing Digital">
+                    <h3>Marketing Digital</h3>
+                    <p>Impulsamos tu negocio en el mundo digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Nuestro Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="./img/proyecto1.webp" alt="Proyecto 1">
+                    <p>Proyecto 1</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/proyecto2.png" alt="Proyecto 2">
+                    <p>Proyecto 2</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/proyecto3.webp" alt="Proyecto 3">
+                    <p>Proyecto 3</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/proyecto4.png" alt="Proyecto 4">
+                    <p>Proyecto 4</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-social">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 Agencia Creativa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
