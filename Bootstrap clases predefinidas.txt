@@ -1,0 +1,26 @@
+Bootstrap clases predefinidas
+- btn
+
+- card
+  - card-header
+  - card-body
+  - card-footer
+
+  - card-title
+  - card-text
+  - card-img-top
+
+- navbar
+  - navbar-brad -> para el logo
+  - navbar-nav -> para los ul
+  - nav-item -> para cada opción del menú (li)
+  - navbar-link -> para los enlaces
+
+- 
+
+- form
+  - form-control -> para los campos
+  - form-label -> para los label de los campos
+  - form-check-input -> para los checkbox
+
+- 
