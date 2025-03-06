@@ -1,0 +1,28 @@
+orden etiqueta animación:
+
+nombre
+duración
+velocidad
+delay
+cuantas veces se repite
+dirección
+	ejemplo:
+	animation: ejemplo 3s linear;
+	
+	@keyframes ejemplo {
+  		0% { 
+		   transform: rotate(0deg); 
+		}
+
+  		100% { 
+		    transform: rotate(360deg); 
+		}
+	}
+
+orden etiqueta transición:
+
+propiedad (lo que se va a cambiar con la transición)
+duración
+velocidad
+	ejemplo:
+	transition: background-color 0.5s ease;
